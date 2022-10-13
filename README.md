@@ -23,8 +23,8 @@ I'm aspire to become a <code>Software Engineer</code> 👨🏻‍💻 and curren
 <img height="180" src="https://github-readme-stats.vercel.app/api?username=eesuhn&show_icons=true&hide_border=true&count_private=true&include_all_commits=true&theme=dracula">
 
 ### I'm Currently Working On: 
-<img height="28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" alt="kotlin"></code>
 <img height="28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" alt="dart"></code>
 <img height="28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="flutter"></code>
+<img height="28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" alt="kotlin"></code>
 <img height="28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" alt="androidstudio"></code>
 <img height="28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" alt="androidstudio"></code>
