@@ -22,7 +22,7 @@ and currently interested in:
 ### GitHub Stats: 
 [<img height="150" src="https://github-readme-stats.vercel.app/api?username=eesuhn&show_icons=true&hide_border=true&hide=stars,issues,contribs&count_private=true&include_all_commits=true&theme=dracula">](https://github.com/eesuhn?tab=repositories)
 
-### I'm Currently Working On: 
+### I'm Currently Working With: 
 <img height="28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" alt="dart"></code>
 <img height="28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="flutter"></code>
 <img height="28" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" alt="kotlin"></code>
