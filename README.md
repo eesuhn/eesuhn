@@ -2,8 +2,8 @@
 
 [<img height="38" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn">](https://www.linkedin.com/in/eason-335uhn/)
 
-I'm a Year 2 Diploma in Information Technology at Sunway College 🏛 Kuala Lumpur who aspire to become a <code>Software Engineer</code> 👨🏻‍💻 <br>
-and currently interested in: 
+I'm a Year 2 Diploma in Information Technology at Sunway College 🏛 Kuala Lumpur <br>
+who aspire to become a <code>Software Engineer</code> 👨🏻‍💻 and currently interested in: 
 - Mobile Development 
 - Machine Learning 
 - Neural Network 
