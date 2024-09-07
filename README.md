@@ -1,7 +1,5 @@
-<b>Hello, I'm Eason</b>
+Hello, I'm Eason
 
-🧊 [Resume](https://github.com/eesuhn/resume/blob/main/eason-lim.pdf)
-
-[<img height="14" src="./x.png">](https://x.com/eesuhn)&nbsp;&nbsp;[@eesuhn](https://x.com/eesuhn)
-
-Connect with me on [LinkedIn](https://www.linkedin.com/in/eason-lim/) or reach out at [eason.yihong@gmail.com](mailto:eason.yihong@gmail.com)
+[<img height="35" src="./x.png">](https://x.com/eesuhn)&nbsp;
+[<img height="35" src="./linkedin.png">](https://www.linkedin.com/in/eason-lim/) <br>
+Reach out @ [eason.yihong@gmail.com](mailto:eason.yihong@gmail.com)
