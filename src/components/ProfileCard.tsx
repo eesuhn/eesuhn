@@ -1,6 +1,7 @@
 'use client'
 
 import { Tilt } from 'react-tilt'
+import Image from 'next/image'
 import { Github, Linkedin, Twitter, Mail } from 'lucide-react'
 
 export function ProfileCardComponent() {
@@ -25,16 +26,25 @@ export function ProfileCardComponent() {
           className="bg-[#070F2B] rounded-xl overflow-hidden shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105"
         >
           <div className="relative">
-            <img
-              src="/banner.jpg?v=1"
-              alt="Banner"
-              className="w-full h-40 object-cover"
-            />
-            <img
-              src="/profile-photo.png?v=1"
-              alt="Profile Photo"
-              className="absolute left-1/2 transform -translate-x-1/2 -bottom-16 w-32 h-32 rounded-full border-4 border-gray-800 shadow-lg transition-all duration-300 ease-in-out hover:scale-110"
-            />
+            <div className="w-full h-40 relative">
+              <Image
+                src="/banner.jpg?v=1"
+                alt="Banner"
+                layout="fill"
+                objectFit="cover"
+                priority
+              />
+            </div>
+            <div className="absolute left-1/2 transform -translate-x-1/2 -bottom-16 w-32 h-32">
+              <Image
+                src="/profile-photo.png?v=1"
+                alt="Profile Photo"
+                width={128}
+                height={128}
+                className="rounded-full border-4 border-gray-800 shadow-lg transition-all duration-300 ease-in-out hover:scale-110"
+                priority
+              />
+            </div>
           </div>
           <div className="px-6 py-4 mt-16 text-center">
             <h2 className="text-2xl font-bold text-white mb-0">Eason Lim</h2>
