@@ -57,14 +57,14 @@ export function ProfileCardComponent() {
                   href="https://t.me/eesuhn"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center rounded cursor-pointer bg-[#1D2FBE] px-6 py-3 font-semibold text-white transition [box-shadow:rgb(171,_196,245)-4px_4px] hover:[box-shadow:rgb(171,_196,_245)0px_0px] focus:[box-shadow:rgb(171,_196,_245)0px_0px] focus:outline-none"
+                  className="inline-flex items-center rounded cursor-pointer bg-[#1D2FBE] px-6 py-3 font-semibold text-white transition [box-shadow:rgb(171,_196,245)-4px_4px] hover:[box-shadow:rgb(171,_196,_245)0px_0px] focus:[box-shadow:rgb(171,_196,_245)0px_0px] focus:outline-none hover:scale-105 focus:scale-105"
                 >
                   Let&apos;s Connect!
                 </a>
                 <a
                   href="/resume.pdf?v=1"
                   download
-                  className="underline mt-2 text-sm text-gray-300 font-bold py-0 px-4 rounded-full transition-all duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:scale-95"
+                  className="underline mt-2 text-sm text-gray-300 font-bold py-0 px-4 rounded-full transition-all duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:scale-105"
                 >
                   Resume
                 </a>
