@@ -14,14 +14,15 @@ export function ProfileCardComponent() {
     <div className="w-full max-w-md">
       <Tilt
         className="w-full h-full"
-        tiltMaxAngleX={12}
-        tiltMaxAngleY={12}
-        perspective={100}
-        scale={1.00}
-        transitionSpeed={800}
-        gyroscope={true}
+        options={{
+          reverse: true,
+          max: 30,
+          perspective: 2000,
+          scale: 1.0,
+          speed: 800,
+          reset: false,
+        }}
       >
-        <div className="absolute inset-0 z-10" />
         <div
           className="bg-[#070F2B] rounded-xl overflow-hidden shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105"
         >
