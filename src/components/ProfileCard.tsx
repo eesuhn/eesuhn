@@ -6,18 +6,21 @@ import { Github, Linkedin, Twitter, Mail } from 'lucide-react'
 export function ProfileCardComponent() {
 
   return (
-    <div
-      className="flex items-center justify-center min-h-screen bg-auto bg-repeat p-4"
-      style={{ backgroundImage: "url('/background.svg')" }}
-    >
+  <div
+    className="flex items-center justify-center min-h-screen bg-auto bg-repeat p-4"
+    style={{ backgroundImage: "url('/background.svg')" }}
+  >
+    <div className="w-full max-w-md">
       <Tilt
-        className="w-full max-w-md"
-        options={{
-          max: -12,
-          scale: 1.02,
-          speed: 800,
-        }}
+        className="w-full h-full"
+        tiltMaxAngleX={12}
+        tiltMaxAngleY={12}
+        perspective={100}
+        scale={1.00}
+        transitionSpeed={800}
+        gyroscope={true}
       >
+        <div className="absolute inset-0 z-10" />
         <div
           className="bg-[#070F2B] rounded-xl overflow-hidden shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105"
         >
@@ -59,7 +62,7 @@ export function ProfileCardComponent() {
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition-colors duration-300"
             >
-              <Mail className={`w-6 h-6`} />
+              <Mail className="w-6 h-6" />
             </a>
             <a
               href="https://x.com/eesuhn"
@@ -67,7 +70,7 @@ export function ProfileCardComponent() {
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition-colors duration-300"
             >
-              <Twitter className={`w-6 h-6`} />
+              <Twitter className="w-6 h-6" />
             </a>
             <a
               href="https://linkedin.com/in/eason-lim"
@@ -75,7 +78,7 @@ export function ProfileCardComponent() {
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition-colors duration-300"
             >
-              <Linkedin className={`w-6 h-6`} />
+              <Linkedin className="w-6 h-6" />
             </a>
             <a
               href="https://github.com/eesuhn"
@@ -83,11 +86,12 @@ export function ProfileCardComponent() {
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition-colors duration-300"
             >
-              <Github className={`w-6 h-6`} />
+              <Github className="w-6 h-6" />
             </a>
           </div>
         </div>
       </Tilt>
     </div>
+  </div>
   )
 }
