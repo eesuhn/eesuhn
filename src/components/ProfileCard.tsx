@@ -1,9 +1,9 @@
-'use client'
+"use client";
 
-import React from 'react';
-import { Tilt } from 'react-tilt';
-import Image from 'next/image';
-import { Github, Linkedin, Twitter, Mail } from 'lucide-react';
+import React from "react";
+import { Tilt } from "react-tilt";
+import Image from "next/image";
+import { Github, Linkedin, Mail, Twitter } from "lucide-react";
 
 const socialLinks = [
   { href: "mailto:eason.yihong@gmail.com", icon: Mail },
@@ -13,7 +13,9 @@ const socialLinks = [
 ];
 
 const ProfileCardComponent = () => {
-  const basePath = process.env.NODE_ENV === 'production' ? 'https://eesuhn.github.io/eesuhn' : '';
+  const basePath = process.env.NODE_ENV === "production"
+    ? "https://eesuhn.github.io/eesuhn"
+    : "";
 
   return (
     <div className="w-full max-w-md">
@@ -50,7 +52,9 @@ const ProfileCardComponent = () => {
           </div>
           <div className="px-6 py-4 mt-16 text-center">
             <h2 className="text-2xl font-bold text-white mb-0">Eason Lim</h2>
-            <p className="text-gray-400 text-sm mb-4">Software Engineer | Cadet @ 42</p>
+            <p className="text-gray-400 text-sm mb-4">
+              Software Engineer | Cadet @ 42
+            </p>
             <p className="text-gray-300 text-base mb-4">
               Know a thing or two about Web3 🌱
             </p>

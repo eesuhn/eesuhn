@@ -1,13 +1,15 @@
-'use client'
+"use client";
 
-import React, { ReactNode } from 'react';
+import React, { ReactNode } from "react";
 
 interface BackgroundProps {
   children: ReactNode;
 }
 
 const Background: React.FC<BackgroundProps> = ({ children }) => {
-  const basePath = process.env.NODE_ENV === 'production' ? 'https://eesuhn.github.io/eesuhn' : '';
+  const basePath = process.env.NODE_ENV === "production"
+    ? "https://eesuhn.github.io/eesuhn"
+    : "";
 
   return (
     <div
@@ -17,6 +19,6 @@ const Background: React.FC<BackgroundProps> = ({ children }) => {
       {children}
     </div>
   );
-}
+};
 
 export default Background;
