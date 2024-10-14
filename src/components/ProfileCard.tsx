@@ -4,6 +4,7 @@ import React from 'react';
 import { Tilt } from 'react-tilt';
 import Image from 'next/image';
 import { Github, Linkedin, Twitter, Mail } from 'lucide-react';
+import { usePathname } from 'next/navigation';
 
 const socialLinks = [
   { href: "mailto:eason.yihong@gmail.com", icon: Mail },
@@ -13,6 +14,9 @@ const socialLinks = [
 ];
 
 const ProfileCardComponent = () => {
+  const pathname = usePathname();
+  const basePath = pathname.startsWith('/eesuhn') ? '/eesuhn' : '';
+
   return (
     <div className="w-full max-w-md">
       <Tilt
@@ -28,7 +32,7 @@ const ProfileCardComponent = () => {
         <div className="bg-[#070F2B] rounded-xl overflow-hidden shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105">
           <div className="relative">
             <Image
-              src="/banner.jpg?v=1"
+              src={`${basePath}/banner.jpg?v=1`}
               alt="Banner"
               width={400}
               height={160}
@@ -37,7 +41,7 @@ const ProfileCardComponent = () => {
             />
             <div className="absolute left-1/2 transform -translate-x-1/2 -bottom-16">
               <Image
-                src="/profile-photo.png?v=1"
+                src={`${basePath}/profile-photo.png?v=1`}
                 alt="Profile Photo"
                 width={128}
                 height={128}
@@ -62,7 +66,7 @@ const ProfileCardComponent = () => {
                 Let&apos;s Connect!
               </a>
               <a
-                href="/resume.pdf?v=1"
+                href={`${basePath}/resume-out/resume.pdf?v=1`}
                 download
                 className="underline mt-2 text-sm text-gray-300 font-bold py-0 px-4 rounded-full transition-all duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:scale-105"
               >
