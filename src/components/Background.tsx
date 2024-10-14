@@ -7,7 +7,7 @@ interface BackgroundProps {
 }
 
 const Background: React.FC<BackgroundProps> = ({ children }) => {
-  const basePath = process.env.BASE_PATH || '';
+  const basePath = process.env.NODE_ENV === 'production' ? 'https://eesuhn.github.io/eesuhn' : '';
 
   return (
     <div

@@ -13,7 +13,7 @@ const socialLinks = [
 ];
 
 const ProfileCardComponent = () => {
-  const basePath = process.env.BASE_PATH || '';
+  const basePath = process.env.NODE_ENV === 'production' ? 'https://eesuhn.github.io/eesuhn' : '';
 
   return (
     <div className="w-full max-w-md">
