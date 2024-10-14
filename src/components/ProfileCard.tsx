@@ -4,7 +4,6 @@ import React from 'react';
 import { Tilt } from 'react-tilt';
 import Image from 'next/image';
 import { Github, Linkedin, Twitter, Mail } from 'lucide-react';
-import { usePathname } from 'next/navigation';
 
 const socialLinks = [
   { href: "mailto:eason.yihong@gmail.com", icon: Mail },
@@ -14,8 +13,7 @@ const socialLinks = [
 ];
 
 const ProfileCardComponent = () => {
-  const pathname = usePathname();
-  const basePath = pathname.startsWith('/eesuhn') ? '/eesuhn' : '';
+  const basePath = process.env.BASE_PATH || '';
 
   return (
     <div className="w-full max-w-md">

@@ -1,15 +1,13 @@
 'use client'
 
 import React, { ReactNode } from 'react';
-import { usePathname } from 'next/navigation';
 
 interface BackgroundProps {
   children: ReactNode;
 }
 
 const Background: React.FC<BackgroundProps> = ({ children }) => {
-  const pathname = usePathname();
-  const basePath = pathname.startsWith('/eesuhn') ? '/eesuhn' : '';
+  const basePath = process.env.BASE_PATH || '';
 
   return (
     <div
