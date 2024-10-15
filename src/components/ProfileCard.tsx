@@ -21,16 +21,16 @@ const ProfileCard = () => {
     <div className="z-10 w-full max-w-md">
       <Tilt
         className="h-full w-full transition-all"
-        perspective={3000}
+        perspective={2800}
         scale={1.02}
         gyroscope={true}
         glareEnable={true}
         glarePosition="all"
-        glareMaxOpacity={0.2}
+        glareMaxOpacity={0.22}
         glareBorderRadius="12px"
         tiltReverse={true}
-        tiltMaxAngleX={10}
-        tiltMaxAngleY={10}
+        tiltMaxAngleX={14}
+        tiltMaxAngleY={14}
       >
         <div className="transform overflow-hidden rounded-xl bg-[#070F2B] shadow-lg transition-all duration-300 ease-in-out">
           <div className="relative">
