@@ -13,7 +13,7 @@ const Background: React.FC<BackgroundProps> = ({ children }) => {
 
   return (
     <div
-      className="flex min-h-screen items-center justify-center bg-cover bg-center bg-no-repeat"
+      className="flex min-h-screen items-center justify-center bg-cover bg-center bg-no-repeat p-4"
       style={{ backgroundImage: `url(${basePath}/background.svg)` }}
     >
       {children}
