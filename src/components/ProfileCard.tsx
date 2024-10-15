@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Tilt } from "react-tilt";
+import Tilt from "react-parallax-tilt";
 import Image from "next/image";
 import { Github, Linkedin, Mail, Twitter } from "lucide-react";
 
@@ -21,15 +21,18 @@ const ProfileCard = () => {
     <div className="w-full max-w-md">
       <Tilt
         className="h-full w-full transition-all"
-        options={{
-          reverse: true,
-          max: 30,
-          perspective: 2000,
-          scale: 1.0,
-          speed: 800,
-        }}
+        perspective={3000}
+        scale={1.02}
+        gyroscope={true}
+        trackOnWindow={true}
+        glareEnable={true}
+        glarePosition="all"
+        glareMaxOpacity={0.2}
+        glareBorderRadius="12px"
+        tiltMaxAngleX={15}
+        tiltMaxAngleY={15}
       >
-        <div className="transform overflow-hidden rounded-xl bg-[#070F2B] shadow-lg transition-all duration-300 ease-in-out hover:scale-105">
+        <div className="transform overflow-hidden rounded-xl bg-[#070F2B] shadow-lg transition-all duration-300 ease-in-out">
           <div className="relative">
             <Image
               src={`${basePath}/banner.jpg?v=1`}
@@ -70,9 +73,9 @@ const ProfileCard = () => {
               <a
                 href={`${basePath}/resume-out/resume.pdf?v=1`}
                 download
-                className="mt-2 transform rounded-full px-4 py-0 text-sm font-bold text-gray-300 underline transition-all duration-300 ease-in-out hover:scale-105 focus:scale-105 focus:outline-none"
+                className="mt-3 transform rounded-full px-4 py-0 text-sm font-bold text-gray-300 underline transition-all duration-300 ease-in-out hover:scale-105 focus:scale-105 focus:outline-none"
               >
-                Resume
+                Check out resumé
               </a>
             </div>
           </div>
