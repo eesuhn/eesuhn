@@ -21,24 +21,24 @@ const ProfileCard = () => {
     <div className="z-10 w-full max-w-md">
       <Tilt
         className="h-full w-full transition-all"
-        perspective={2800}
+        perspective={3200}
         scale={1.02}
         gyroscope={true}
         glareEnable={true}
         glarePosition="all"
-        glareMaxOpacity={0.22}
+        glareMaxOpacity={0.16}
         glareBorderRadius="12px"
         tiltReverse={true}
-        tiltMaxAngleX={14}
-        tiltMaxAngleY={14}
+        tiltMaxAngleX={10}
+        tiltMaxAngleY={10}
       >
         <div className="transform overflow-hidden rounded-xl bg-[#070F2B] shadow-lg transition-all duration-300 ease-in-out">
           <div className="relative">
             <Image
-              src={`${basePath}/banner.jpg?v=1`}
+              src={`${basePath}/banner.png?v=1`}
               alt="Banner"
-              width={400}
-              height={160}
+              width={300}
+              height={100}
               layout="responsive"
               priority
             />
@@ -66,12 +66,12 @@ const ProfileCard = () => {
                 href="https://t.me/eesuhn"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex cursor-pointer items-center rounded bg-[#1D2FBE] px-6 py-3 font-semibold text-white transition [box-shadow:rgb(171,_196,245)-4px_4px] hover:scale-105 hover:[box-shadow:rgb(171,_196,_245)0px_0px] focus:scale-105 focus:outline-none focus:[box-shadow:rgb(171,_196,_245)0px_0px]"
+                className="inline-flex cursor-pointer items-center rounded bg-[#1628bb] px-6 py-3 font-semibold text-white transition [box-shadow:rgb(171,_196,245)-4px_4px] hover:scale-105 hover:[box-shadow:rgb(171,_196,_245)0px_0px] focus:scale-105 focus:outline-none focus:[box-shadow:rgb(171,_196,_245)0px_0px]"
               >
                 Let&apos;s Connect!
               </a>
               <a
-                href={`${basePath}/resume-out/resume.pdf?v=1`}
+                href={`${basePath}/resume/eason-lim.pdf?v=1`}
                 download
                 className="mt-3 transform rounded-full px-4 py-0 text-sm font-bold text-gray-300 underline transition-all duration-300 ease-in-out hover:scale-105 focus:scale-105 focus:outline-none"
               >
