@@ -1,0 +1,11 @@
+{
+  "name": "eesuhn",
+  "private": true,
+  "scripts": {
+    "postinstall": "bun install --cwd next-profile",
+    "dev": "bun run --cwd next-profile dev",
+    "build": "bun run --cwd next-profile build",
+    "start": "bun run --cwd next-profile start",
+    "lint": "bun run --cwd next-profile lint"
+  }
+}
