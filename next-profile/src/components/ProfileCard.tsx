@@ -13,10 +13,6 @@ const socialLinks = [
 ];
 
 const ProfileCard = () => {
-  const basePath = process.env.NODE_ENV === "production"
-    ? "https://eesuhn.github.io/eesuhn"
-    : "";
-
   return (
     <div className="z-10 w-full max-w-md">
       <Tilt
@@ -26,29 +22,29 @@ const ProfileCard = () => {
         gyroscope={true}
         glareEnable={true}
         glarePosition="all"
-        glareMaxOpacity={0.16}
+        glareMaxOpacity={0.12}
         glareBorderRadius="12px"
         tiltReverse={true}
-        tiltMaxAngleX={10}
-        tiltMaxAngleY={10}
+        tiltMaxAngleX={8}
+        tiltMaxAngleY={8}
       >
         <div className="transform overflow-hidden rounded-xl bg-[#070F2B] shadow-lg transition-all duration-300 ease-in-out">
           <div className="relative">
             <Image
-              src={`${basePath}/banner.png?v=1`}
+              src={`/banner.png?v=1`}
               alt="Banner"
               width={300}
               height={100}
-              layout="responsive"
               priority
+              style={{ width: '100%', height: 'auto' }}
             />
             <div className="absolute -bottom-16 left-1/2 -translate-x-1/2 transform">
               <Image
-                src={`${basePath}/profile-photo.png?v=1`}
+                src={`/profile-photo.png?v=1`}
                 alt="Profile Photo"
                 width={128}
                 height={128}
-                className="rounded-full border-4 border-gray-800 shadow-lg transition-all duration-300 ease-in-out hover:scale-110"
+                className="rounded-full border-4 border-gray-800 shadow-lg transition-all duration-300 ease-in-out hover:scale-105"
                 priority
               />
             </div>
@@ -71,7 +67,7 @@ const ProfileCard = () => {
                 Let&apos;s Connect!
               </a>
               <a
-                href={`${basePath}/resume/eason-lim.pdf?v=1`}
+                href={`/resume/eason-lim.pdf?v=1`}
                 download
                 className="mt-3 transform rounded-full px-4 py-0 text-sm font-bold text-gray-300 underline transition-all duration-300 ease-in-out hover:scale-105 focus:scale-105 focus:outline-none"
               >
