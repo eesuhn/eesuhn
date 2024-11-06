@@ -1,9 +1,11 @@
 import type { NextConfig } from "next";
 
+const isProduction = process.env.NODE_ENV === "production";
+
 const nextConfig: NextConfig = {
   output: "export",
   reactStrictMode: true,
-  basePath: process.env.NODE_ENV === "production" ? "/eesuhn" : "",
+  basePath: isProduction ? "/eesuhn" : "",
   images: {
     unoptimized: true,
   }

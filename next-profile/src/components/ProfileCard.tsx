@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import Tilt from "react-parallax-tilt";
 import Image from "next/image";
 import { Github, Linkedin, Mail, Twitter } from "lucide-react";
+import { basePath } from "@/lib/utils";
 
 const socialLinks = [
   { href: "mailto:eason.yihong@gmail.com", icon: Mail },
@@ -40,7 +41,7 @@ const ProfileCard = () => {
         <div className="transform overflow-hidden rounded-xl bg-[#070F2B] shadow-lg transition-all duration-300 ease-in-out">
           <div className="relative">
             <Image
-              src="/banner.png?v=1"
+              src={`${basePath}/banner.png?v=1`}
               alt="Banner"
               width={300}
               height={100}
@@ -49,7 +50,7 @@ const ProfileCard = () => {
             />
             <div className="absolute -bottom-16 left-1/2 -translate-x-1/2 transform">
               <Image
-                src="/profile-photo.png?v=1"
+                src={`${basePath}/profile-photo.png?v=1`}
                 alt="Profile Photo"
                 width={128}
                 height={128}
@@ -73,7 +74,7 @@ const ProfileCard = () => {
                 Let&apos;s Connect!
               </a>
               <a
-                href="/resume/eason-lim.pdf?v=1"
+                href={`${basePath}/resume/eason-lim.pdf?v=1`}
                 download
                 className="mt-3 transform rounded-full px-4 py-0 text-sm font-bold text-gray-300 underline transition-all duration-300 ease-in-out hover:scale-105 focus:scale-105 focus:outline-none"
               >
