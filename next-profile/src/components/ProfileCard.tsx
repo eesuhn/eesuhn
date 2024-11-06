@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Tilt from "react-parallax-tilt";
 import Image from "next/image";
 import { Github, Linkedin, Mail, Twitter } from "lucide-react";
@@ -13,9 +13,14 @@ const socialLinks = [
 ];
 
 const ProfileCard = () => {
-  const basePath = process.env.NODE_ENV === "production"
-  ? "https://eesuhn.github.io/eesuhn"
-  : "";
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth < 768);
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <div className="z-10 w-full max-w-md">
@@ -28,14 +33,14 @@ const ProfileCard = () => {
         glarePosition="all"
         glareMaxOpacity={0.12}
         glareBorderRadius="12px"
-        tiltReverse={true}
+        tiltReverse={!isMobile}
         tiltMaxAngleX={8}
         tiltMaxAngleY={8}
       >
         <div className="transform overflow-hidden rounded-xl bg-[#070F2B] shadow-lg transition-all duration-300 ease-in-out">
           <div className="relative">
             <Image
-              src={`${basePath}/banner.png?v=1`}
+              src="/banner.png?v=1"
               alt="Banner"
               width={300}
               height={100}
@@ -44,7 +49,7 @@ const ProfileCard = () => {
             />
             <div className="absolute -bottom-16 left-1/2 -translate-x-1/2 transform">
               <Image
-                src={`${basePath}/profile-photo.png?v=1`}
+                src="/profile-photo.png?v=1"
                 alt="Profile Photo"
                 width={128}
                 height={128}
@@ -56,10 +61,7 @@ const ProfileCard = () => {
           <div className="mt-16 px-6 py-4 text-center">
             <h2 className="mb-0 text-2xl font-bold text-white">Eason Lim</h2>
             <p className="mb-4 text-sm text-gray-400">
-              Software Engineer | Cadet @ 42
-            </p>
-            <p className="mb-4 text-base text-gray-300">
-              Know a thing or two about Web3 🌱
+              Cadet @ 42 • Web3 Buidler 🚀
             </p>
             <div className="flex flex-col items-center">
               <a
@@ -71,7 +73,7 @@ const ProfileCard = () => {
                 Let&apos;s Connect!
               </a>
               <a
-                href={`${basePath}/resume/eason-lim.pdf?v=1`}
+                href="/resume/eason-lim.pdf?v=1"
                 download
                 className="mt-3 transform rounded-full px-4 py-0 text-sm font-bold text-gray-300 underline transition-all duration-300 ease-in-out hover:scale-105 focus:scale-105 focus:outline-none"
               >

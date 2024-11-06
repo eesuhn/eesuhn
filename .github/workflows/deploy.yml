@@ -3,6 +3,8 @@ name: Deployment with Bun.js
 on:
   push:
     branches: ["main"]
+    paths:
+      - "next-profile/**"
   workflow_dispatch:
 
 permissions:
