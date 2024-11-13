@@ -24,7 +24,7 @@ const ProfileCard = () => {
   }, []);
 
   return (
-    <div className="z-10 w-full max-w-md">
+    <div className="z-10 w-full max-w-[420px]">
       <Tilt
         className="h-full w-full transition-all"
         perspective={3200}
@@ -75,7 +75,8 @@ const ProfileCard = () => {
               </a>
               <a
                 href={`${basePath}/resume/eason-lim.pdf?v=1`}
-                download
+                target="_blank"
+                rel="noopener noreferrer"
                 className="mt-3 transform rounded-full px-4 py-0 text-sm font-bold text-gray-300 underline transition-all duration-300 ease-in-out hover:scale-105 focus:scale-105 focus:outline-none"
               >
                 Check out resumé
