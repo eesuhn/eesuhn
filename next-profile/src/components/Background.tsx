@@ -18,6 +18,7 @@ const Background: React.FC<BackgroundProps> = ({ children }) => {
         alt="Background"
         layout="fill"
         objectFit="cover"
+        objectPosition="center"
       />
       {children}
       <ul className="circles">
