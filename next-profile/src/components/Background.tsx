@@ -1,8 +1,8 @@
-"use client";
+'use client';
 
-import React, { ReactNode } from "react";
-import Image from "next/legacy/image";
-import { basePath } from "@/lib/utils";
+import React, { ReactNode } from 'react';
+import Image from 'next/legacy/image';
+import { basePath } from '@/lib/utils';
 
 interface BackgroundProps {
   children: ReactNode;
@@ -10,9 +10,7 @@ interface BackgroundProps {
 
 const Background: React.FC<BackgroundProps> = ({ children }) => {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center bg-cover bg-center bg-no-repeat p-6 relative"
-    >
+    <div className="relative flex min-h-screen items-center justify-center bg-cover bg-center bg-no-repeat p-6">
       <Image
         src={`${basePath}/background.svg?v=1`}
         alt="Background"

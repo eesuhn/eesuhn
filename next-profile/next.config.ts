@@ -1,14 +1,30 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next';
 
-const isProduction = process.env.NODE_ENV === "production";
+const isProduction = process.env.NODE_ENV === 'production';
 
 const nextConfig: NextConfig = {
-  output: "export",
+  output: 'export',
   reactStrictMode: true,
-  basePath: isProduction ? "/eesuhn" : "",
+  trailingSlash: true,
+
+  basePath: isProduction ? '/eesuhn' : '',
+  assetPrefix: isProduction ? '/eesuhn' : '',
+
   images: {
     unoptimized: true,
-  }
+  },
+
+  webpack: (config, { isServer }) => {
+    if (!isServer) {
+      config.resolve.fallback = {
+        ...config.resolve.fallback,
+        fs: false,
+        net: false,
+        tls: false,
+      };
+    }
+    return config;
+  },
 };
 
 export default nextConfig;

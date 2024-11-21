@@ -1,5 +1,5 @@
-import Background from "@/components/Background";
-import ProfileCard from "@/components/ProfileCard";
+import Background from '@/components/Background';
+import ProfileCard from '@/components/ProfileCard';
 
 export default function Home() {
   return (

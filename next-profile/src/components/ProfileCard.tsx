@@ -1,16 +1,16 @@
-"use client";
+'use client';
 
-import React, { useState, useEffect } from "react";
-import Tilt from "react-parallax-tilt";
-import Image from "next/image";
-import { Github, Linkedin, Mail, Twitter } from "lucide-react";
-import { basePath } from "@/lib/utils";
+import React, { useState, useEffect } from 'react';
+import Tilt from 'react-parallax-tilt';
+import Image from 'next/image';
+import { Github, Linkedin, Mail, Twitter } from 'lucide-react';
+import { basePath } from '@/lib/utils';
 
 const socialLinks = [
-  { href: "mailto:eason.yihong@gmail.com", icon: Mail },
-  { href: "https://x.com/eesuhn", icon: Twitter },
-  { href: "https://linkedin.com/in/eason-lim", icon: Linkedin },
-  { href: "https://github.com/eesuhn", icon: Github },
+  { href: 'mailto:eason.yihong@gmail.com', icon: Mail },
+  { href: 'https://x.com/eesuhn', icon: Twitter },
+  { href: 'https://linkedin.com/in/eason-lim', icon: Linkedin },
+  { href: 'https://github.com/eesuhn', icon: Github },
 ];
 
 const ProfileCard = () => {
@@ -19,8 +19,8 @@ const ProfileCard = () => {
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth < 768);
     handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
   }, []);
 
   return (
