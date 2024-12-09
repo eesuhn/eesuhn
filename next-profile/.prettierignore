@@ -1,4 +1,6 @@
-node_modules/
-.next/
-public/
-build/
+.DS_Store
+build
+dist
+.next
+node_modules
+target
