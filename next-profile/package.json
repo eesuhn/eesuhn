@@ -7,8 +7,8 @@
     "build": "next build",
     "start": "bunx serve dist",
     "lint": "next lint",
-    "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format": "prettier . --write",
+    "format:check": "prettier . --check"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.0",

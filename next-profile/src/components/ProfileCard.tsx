@@ -32,7 +32,7 @@ const ProfileCard = () => {
         gyroscope={true}
         glareEnable={true}
         glarePosition="all"
-        glareMaxOpacity={0.12}
+        glareMaxOpacity={0.1}
         glareBorderRadius="12px"
         tiltReverse={!isMobile}
         tiltMaxAngleX={8}
@@ -41,7 +41,7 @@ const ProfileCard = () => {
         <div className="transform overflow-hidden rounded-xl bg-[#070F2B] shadow-lg transition-all duration-300 ease-in-out">
           <div className="relative">
             <Image
-              src={`${basePath}/banner.png?v=1`}
+              src={`${basePath}/banner.webp?v=1`}
               alt="Banner"
               width={300}
               height={100}
@@ -50,7 +50,7 @@ const ProfileCard = () => {
             />
             <div className="absolute -bottom-16 left-1/2 -translate-x-1/2 transform">
               <Image
-                src={`${basePath}/profile-photo.png?v=1`}
+                src={`${basePath}/profile-photo.webp?v=1`}
                 alt="Profile Photo"
                 width={128}
                 height={128}
@@ -61,10 +61,18 @@ const ProfileCard = () => {
           </div>
           <div className="mt-16 px-6 py-4 text-center">
             <h2 className="mb-0 text-2xl font-bold text-white">Eason Lim</h2>
-            <p className="mb-4 text-sm text-gray-400">
-              Cadet @ 42 • Web3 Buidler 🚀
-            </p>
-            <div className="flex flex-col items-center">
+            <span className="text-sm text-gray-400">
+              Web3 buidler • Cadet{' '}
+              <a
+                href="https://example.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                @42born2code
+              </a>
+            </span>
+            <div className="mt-3 flex flex-col items-center">
               <a
                 href="https://t.me/eesuhn"
                 target="_blank"
