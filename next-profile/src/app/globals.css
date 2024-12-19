@@ -180,3 +180,12 @@ body {
     border-radius: 50%;
   }
 }
+
+/* Logo */
+.align-cg-logo {
+  transform: translateY(7px);
+}
+
+.align-42-logo {
+  transform: translateY(6px);
+}

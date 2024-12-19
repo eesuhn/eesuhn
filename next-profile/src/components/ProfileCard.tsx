@@ -62,14 +62,36 @@ const ProfileCard = () => {
           <div className="mt-16 px-6 py-4 text-center">
             <h2 className="mb-0 text-2xl font-bold text-white">Eason Lim</h2>
             <span className="text-sm text-gray-400">
-              Web3 buidler • Cadet{' '}
+              Product @{' '}
               <a
-                href="https://example.com"
+                href="https://www.coingecko.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:underline"
+                className="inline-flex items-center"
               >
-                @42born2code
+                <Image
+                  src={`${basePath}/coingecko.webp`}
+                  alt="CoinGecko Logo"
+                  width={24}
+                  height={24}
+                  className="align-cg-logo inline-block rounded-sm"
+                />
+              </a>
+              {' • '}
+              Cadet @{' '}
+              <a
+                href="https://www.42network.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="ml-[1px] inline-flex items-center"
+              >
+                <Image
+                  src={`${basePath}/42.webp`}
+                  alt="42 Logo"
+                  width={21}
+                  height={21}
+                  className="align-42-logo inline-block rounded-sm"
+                />
               </a>
             </span>
             <div className="mt-3 flex flex-col items-center">
