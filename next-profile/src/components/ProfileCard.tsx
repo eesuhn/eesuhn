@@ -54,7 +54,7 @@ const ProfileCard = () => {
                 alt="Profile Photo"
                 width={128}
                 height={128}
-                className="rounded-full border-4 border-gray-800 shadow-lg transition-all duration-300 ease-in-out hover:scale-105"
+                className="rounded-full border-4 border-gray-800"
                 priority
               />
             </div>
@@ -62,7 +62,7 @@ const ProfileCard = () => {
           <div className="mt-16 px-6 py-4 text-center">
             <h2 className="mb-0 text-2xl font-bold text-white">Eason Lim</h2>
             <span className="text-sm text-gray-400">
-              Product @{' '}
+              {/* Product @{' '}
               <a
                 href="https://www.coingecko.com/"
                 target="_blank"
@@ -76,7 +76,8 @@ const ProfileCard = () => {
                   height={24}
                   className="align-cg-logo inline-block rounded-sm"
                 />
-              </a>
+              </a> */}
+              Building in Web3
               {' • '}
               Cadet @{' '}
               <a
