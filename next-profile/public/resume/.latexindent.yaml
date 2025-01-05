@@ -1,0 +1,17 @@
+defaultIndent: '  '
+
+verbatimEnvironments:
+  lst: 1
+
+indentRules:
+  commands: 1
+
+modifyLineBreaks:
+  commands:
+    CommandStartsOnOwnLine:
+      vspace: 1
+
+  environments:
+    BeginStartsOnOwnLine: 1
+    BodyStartsOnOwnLine: 1
+    EndStartsOnOwnLine: 1

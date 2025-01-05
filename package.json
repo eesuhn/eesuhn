@@ -7,7 +7,13 @@
     "build": "bun run --cwd next-profile build",
     "start": "bun run --cwd next-profile start",
     "lint": "bun run --cwd next-profile lint",
-    "format": "bun run --cwd next-profile format",
-    "format:check": "bun run --cwd next-profile format:check"
+    "format": "prettier --write .",
+    "format:latex": "latexindent -w -s -m -l next-profile/public/resume/eason-lim.tex",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "prettier": "3.4.2",
+    "prettier-plugin-tailwindcss": "^0.6.9"
   }
 }
