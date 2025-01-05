@@ -1,4 +1,4 @@
-defaultIndent: "  "
+defaultIndent: '  '
 
 verbatimEnvironments:
   lst: 1
