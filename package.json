@@ -8,7 +8,6 @@
     "start": "bun run --cwd next-profile start",
     "lint": "bun run --cwd next-profile lint",
     "format": "prettier --write .",
-    "format:latex": "latexindent -w -s -m -l next-profile/public/resume/eason-lim.tex",
     "prepare": "husky"
   },
   "devDependencies": {
