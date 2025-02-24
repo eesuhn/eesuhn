@@ -103,14 +103,14 @@ const ProfileCard = () => {
               >
                 Let&apos;s Connect!
               </a>
-              <a
+              {/* <a
                 href={`${basePath}/resume/eason-lim.pdf?v=1`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-3 transform rounded-full px-4 py-0 text-sm font-bold text-gray-300 underline transition-all duration-300 ease-in-out hover:scale-105 focus:scale-105 focus:outline-none"
               >
                 Check out resumé
-              </a>
+              </a> */}
             </div>
           </div>
           <div className="flex justify-center space-x-6 bg-[#000000] bg-opacity-30 px-6 py-4">
