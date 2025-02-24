@@ -54,7 +54,7 @@ const ProfileCard = () => {
                 alt="Profile Photo"
                 width={128}
                 height={128}
-                className="rounded-full border-4 border-gray-800"
+                className="rounded-full"
                 priority
               />
             </div>
