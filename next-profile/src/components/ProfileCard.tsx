@@ -59,10 +59,10 @@ const ProfileCard = () => {
               />
             </div>
           </div>
-          <div className="mt-16 px-6 py-4 text-center">
-            <h2 className="mb-0 text-2xl font-bold text-white">Eason Lim</h2>
+          <div className="mt-14 px-6 py-4 text-center">
+            <h2 className="mb-0 text-xl font-bold text-white">eason | eesuhn</h2>
             <span className="text-sm text-gray-400">
-              PM @{' '}
+              buidler @ {' '}{' '}
               <a
                 href="https://www.coingecko.com/"
                 target="_blank"
@@ -77,13 +77,11 @@ const ProfileCard = () => {
                   className="align-cg-logo inline-block rounded-sm"
                 />
               </a>
-              {' • '}
-              Cadet @{' '}
               <a
                 href="https://www.42network.org/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="ml-[1px] inline-flex items-center"
+                className="ml-[6px] inline-flex items-center"
               >
                 <Image
                   src={`${basePath}/42.webp`}
@@ -99,7 +97,7 @@ const ProfileCard = () => {
                 href="https://t.me/eesuhn"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex cursor-pointer items-center rounded bg-[#1F1F1F] px-6 py-3 font-semibold text-white transition [box-shadow:rgb(194,_192,188)-4px_4px] hover:scale-105 hover:[box-shadow:rgb(194,_192,_188)0px_0px] focus:scale-105 focus:outline-none focus:[box-shadow:rgb(194,_192,_188)0px_0px]"
+                className="mb-[10px] inline-flex cursor-pointer items-center rounded bg-[#1F1F1F] px-6 py-3 font-semibold text-white transition [box-shadow:rgb(194,_192,188)-4px_4px] hover:scale-105 hover:[box-shadow:rgb(194,_192,_188)0px_0px] focus:scale-105 focus:outline-none focus:[box-shadow:rgb(194,_192,_188)0px_0px]"
               >
                 Let&apos;s Connect!
               </a>
