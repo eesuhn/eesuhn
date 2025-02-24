@@ -38,7 +38,7 @@ const ProfileCard = () => {
         tiltMaxAngleX={8}
         tiltMaxAngleY={8}
       >
-        <div className="transform overflow-hidden rounded-xl bg-[#070F2B] shadow-lg transition-all duration-300 ease-in-out">
+        <div className="transform overflow-hidden rounded-xl bg-[#141414] shadow-lg transition-all duration-300 ease-in-out">
           <div className="relative">
             <Image
               src={`${basePath}/banner.webp?v=1`}
@@ -99,7 +99,7 @@ const ProfileCard = () => {
                 href="https://t.me/eesuhn"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex cursor-pointer items-center rounded bg-[#1628bb] px-6 py-3 font-semibold text-white transition [box-shadow:rgb(171,_196,245)-4px_4px] hover:scale-105 hover:[box-shadow:rgb(171,_196,_245)0px_0px] focus:scale-105 focus:outline-none focus:[box-shadow:rgb(171,_196,_245)0px_0px]"
+                className="inline-flex cursor-pointer items-center rounded bg-[#1F1F1F] px-6 py-3 font-semibold text-white transition [box-shadow:rgb(194,_192,188)-4px_4px] hover:scale-105 hover:[box-shadow:rgb(194,_192,_188)0px_0px] focus:scale-105 focus:outline-none focus:[box-shadow:rgb(194,_192,_188)0px_0px]"
               >
                 Let&apos;s Connect!
               </a>
@@ -113,7 +113,7 @@ const ProfileCard = () => {
               </a>
             </div>
           </div>
-          <div className="flex justify-center space-x-6 bg-[#535C91] bg-opacity-30 px-6 py-4">
+          <div className="flex justify-center space-x-6 bg-[#000000] bg-opacity-30 px-6 py-4">
             {socialLinks.map(({ href, icon: Icon }) => (
               <a
                 key={href}
