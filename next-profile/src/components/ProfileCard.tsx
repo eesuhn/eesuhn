@@ -60,9 +60,11 @@ const ProfileCard = () => {
             </div>
           </div>
           <div className="mt-14 px-6 py-4 text-center">
-            <h2 className="mb-0 text-xl font-bold text-white">eason | eesuhn</h2>
+            <h2 className="mb-0 text-xl font-bold text-white">
+              eason | eesuhn
+            </h2>
             <span className="text-sm text-gray-400">
-              buidler @ {' '}{' '}
+              buidling cool ideas @{' '}
               <a
                 href="https://www.coingecko.com/"
                 target="_blank"
