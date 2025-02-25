@@ -63,13 +63,13 @@ const ProfileCard = () => {
             <h2 className="mb-0 text-xl font-bold text-white">
               eason | eesuhn
             </h2>
-            <span className="text-sm text-gray-400">
+            <span className="text-sm text-gray-400 italic">
               buidling cool ideas @{' '}
               <a
                 href="https://www.coingecko.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center"
+                className="inline-flex items-center hover:scale-105 focus:scale-105 focus:outline-none"
               >
                 <Image
                   src={`${basePath}/coingecko.webp`}
@@ -83,7 +83,7 @@ const ProfileCard = () => {
                 href="https://www.42network.org/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="ml-[6px] inline-flex items-center"
+                className="ml-[6px] inline-flex items-center hover:scale-105 focus:scale-105 focus:outline-none"
               >
                 <Image
                   src={`${basePath}/42.webp`}
@@ -94,7 +94,7 @@ const ProfileCard = () => {
                 />
               </a>
             </span>
-            <div className="mt-3 flex flex-col items-center">
+            <div className="mt-4 flex flex-col items-center">
               <a
                 href="https://t.me/eesuhn"
                 target="_blank"
@@ -113,14 +113,14 @@ const ProfileCard = () => {
               </a> */}
             </div>
           </div>
-          <div className="flex justify-center space-x-6 bg-[#000000] bg-opacity-30 px-6 py-4">
+          <div className="flex justify-center space-x-6 px-6 pb-6">
             {socialLinks.map(({ href, icon: Icon }) => (
               <a
                 key={href}
                 href={href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 transition-colors duration-300 hover:text-white"
+                className="text-gray-400 transition-colors duration-300 hover:text-white focus:text-white focus:outline-none"
               >
                 <Icon className="h-6 w-6" />
               </a>
