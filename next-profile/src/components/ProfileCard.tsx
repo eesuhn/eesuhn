@@ -63,8 +63,8 @@ const ProfileCard = () => {
             <h2 className="mb-0 text-xl font-bold text-white">
               eason | eesuhn
             </h2>
-            <span className="text-sm text-gray-400 italic">
-              buidling cool ideas @{' '}
+            <span className="text-sm italic text-gray-400">
+              Building cool ideas @{' '}
               <a
                 href="https://www.coingecko.com/"
                 target="_blank"
@@ -72,7 +72,7 @@ const ProfileCard = () => {
                 className="inline-flex items-center hover:scale-105 focus:scale-105 focus:outline-none"
               >
                 <Image
-                  src={`${basePath}/coingecko.webp`}
+                  src="https://www.coingecko.com/favicon-96x96.png"
                   alt="CoinGecko Logo"
                   width={24}
                   height={24}

@@ -1,5 +1,10 @@
 {
   "name": "eesuhn",
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "prettier": "3.4.2",
+    "prettier-plugin-tailwindcss": "^0.6.9"
+  },
   "private": true,
   "scripts": {
     "postinstall": "bun install --cwd next-profile",
@@ -9,10 +14,5 @@
     "lint": "bun run --cwd next-profile lint",
     "format": "prettier --write .",
     "prepare": "husky"
-  },
-  "devDependencies": {
-    "husky": "^9.1.7",
-    "prettier": "3.4.2",
-    "prettier-plugin-tailwindcss": "^0.6.9"
   }
 }
